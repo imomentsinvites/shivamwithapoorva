@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" fill="none">
+<defs>
+ <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#f8d9d7"/><stop offset=".65" stop-color="#fbe9dc"/><stop offset="1" stop-color="#f4d4c7"/></linearGradient>
+ <linearGradient id="gold" x2="0" y2="1"><stop stop-color="#f8dda0"/><stop offset="1" stop-color="#b77a3f"/></linearGradient>
+ <linearGradient id="hill" x2="0" y2="1"><stop stop-color="#d8a99b"/><stop offset="1" stop-color="#b67f77"/></linearGradient>
+</defs>
+<rect width="1200" height="900" fill="url(#sky)"/>
+<circle cx="920" cy="180" r="105" fill="#fff2d9" opacity=".48"/>
+<path d="M0 620 Q180 500 360 600 T720 580 T1200 560 V900 H0Z" fill="#d9aaa0" opacity=".42"/>
+<path d="M0 700 Q220 580 430 690 T850 650 T1200 670 V900 H0Z" fill="url(#hill)" opacity=".3"/>
+<g fill="#f9eee3" stroke="#bd8c61" stroke-width="5" opacity=".78">
+ <path d="M80 670V440Q80 280 250 280Q420 280 420 440V670Z"/>
+ <path d="M115 670V450Q115 330 250 330Q385 330 385 450V670Z" fill="#eac4b5" opacity=".42"/>
+ <path d="M800 670V420Q800 240 980 240Q1160 240 1160 420V670Z"/>
+ <path d="M835 670V430Q835 290 980 290Q1125 290 1125 430V670Z" fill="#eac4b5" opacity=".42"/>
+</g>
+<g fill="#c68e6b" opacity=".8"><path d="M0 770H1200V900H0Z"/><path d="M0 780Q300 740 600 780T1200 780" stroke="#f9e7d7" stroke-width="8" fill="none"/></g>
+<g stroke="#9e6b4d" stroke-width="7" fill="none" opacity=".7">
+ <path d="M0 110Q180 180 330 65T650 80T930 70T1200 120"/>
+ <path d="M85 0V145M1110 0V150"/>
+</g>
+<g fill="#c96f82" opacity=".8">
+ <circle cx="70" cy="125" r="17"/><circle cx="105" cy="148" r="12"/><circle cx="1130" cy="130" r="17"/><circle cx="1080" cy="105" r="12"/>
+ <circle cx="280" cy="80" r="13"/><circle cx="920" cy="65" r="13"/>
+</g>
+
+<g transform="translate(460 420)">
+ <ellipse cx="140" cy="245" rx="260" ry="40" fill="#b47d65" opacity=".18"/>
+ <path d="M-70 220V-40Q-70 -130 140 -130Q350 -130 350 -40V220" stroke="#b67b52" stroke-width="18" fill="#f9e7d9" opacity=".88"/>
+ <path d="M-28 220V-34Q-28 -90 140 -90Q308 -90 308 -34V220" stroke="#e2b47c" stroke-width="7" fill="#f4d2c3"/>
+ <path d="M-10 220V95Q140 -20 290 95V220" fill="#d7a7a0" opacity=".35"/>
+ <g fill="#d99a3e"><circle cx="140" cy="-95" r="20"/><circle cx="20" cy="-25" r="12"/><circle cx="260" cy="-25" r="12"/></g>
+ <g fill="#c46d48"><path d="M40 220Q15 150 75 125Q120 160 95 220Z"/><path d="M190 220Q165 150 225 125Q270 160 245 220Z"/></g>
+ <g fill="#e8b34e"><circle cx="75" cy="125" r="22"/><circle cx="225" cy="125" r="22"/><circle cx="140" cy="155" r="28"/></g>
+</g>
+<g fill="#b77b3f" opacity=".65"><path d="M190 730q-20 -70 20 -110q40 40 20 110z"/><path d="M980 735q-20 -70 20 -110q40 40 20 110z"/></g>
+</svg>

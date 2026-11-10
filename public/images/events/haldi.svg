@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" fill="none">
+<defs>
+ <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#f8d9d7"/><stop offset=".65" stop-color="#fbe9dc"/><stop offset="1" stop-color="#f4d4c7"/></linearGradient>
+ <linearGradient id="gold" x2="0" y2="1"><stop stop-color="#f8dda0"/><stop offset="1" stop-color="#b77a3f"/></linearGradient>
+ <linearGradient id="hill" x2="0" y2="1"><stop stop-color="#d8a99b"/><stop offset="1" stop-color="#b67f77"/></linearGradient>
+</defs>
+<rect width="1200" height="900" fill="url(#sky)"/>
+<circle cx="920" cy="180" r="105" fill="#fff2d9" opacity=".48"/>
+<path d="M0 620 Q180 500 360 600 T720 580 T1200 560 V900 H0Z" fill="#d9aaa0" opacity=".42"/>
+<path d="M0 700 Q220 580 430 690 T850 650 T1200 670 V900 H0Z" fill="url(#hill)" opacity=".3"/>
+<g fill="#f9eee3" stroke="#bd8c61" stroke-width="5" opacity=".78">
+ <path d="M80 670V440Q80 280 250 280Q420 280 420 440V670Z"/>
+ <path d="M115 670V450Q115 330 250 330Q385 330 385 450V670Z" fill="#eac4b5" opacity=".42"/>
+ <path d="M800 670V420Q800 240 980 240Q1160 240 1160 420V670Z"/>
+ <path d="M835 670V430Q835 290 980 290Q1125 290 1125 430V670Z" fill="#eac4b5" opacity=".42"/>
+</g>
+<g fill="#c68e6b" opacity=".8"><path d="M0 770H1200V900H0Z"/><path d="M0 780Q300 740 600 780T1200 780" stroke="#f9e7d7" stroke-width="8" fill="none"/></g>
+<g stroke="#9e6b4d" stroke-width="7" fill="none" opacity=".7">
+ <path d="M0 110Q180 180 330 65T650 80T930 70T1200 120"/>
+ <path d="M85 0V145M1110 0V150"/>
+</g>
+<g fill="#c96f82" opacity=".8">
+ <circle cx="70" cy="125" r="17"/><circle cx="105" cy="148" r="12"/><circle cx="1130" cy="130" r="17"/><circle cx="1080" cy="105" r="12"/>
+ <circle cx="280" cy="80" r="13"/><circle cx="920" cy="65" r="13"/>
+</g>
+
+<g transform="translate(560 545)">
+ <ellipse cx="0" cy="145" rx="300" ry="60" fill="#b47d65" opacity=".16"/>
+ <path d="M-220 20Q-200 200 0 200Q200 200 220 20Z" fill="#c88c45" stroke="#a96f38" stroke-width="12"/>
+ <ellipse cx="0" cy="20" rx="220" ry="68" fill="#f5cf68" stroke="#a96f38" stroke-width="12"/>
+ <ellipse cx="0" cy="20" rx="170" ry="44" fill="#f9e49a"/>
+ <g fill="#f4c34d"><circle cx="-95" cy="-3" r="20"/><circle cx="-40" cy="28" r="24"/><circle cx="40" cy="-4" r="22"/><circle cx="100" cy="24" r="20"/></g>
+ <g fill="#e7a83c"><circle cx="-180" cy="10" r="11"/><circle cx="175" cy="5" r="13"/><circle cx="0" cy="-28" r="12"/></g>
+</g>
+<g stroke="#b67b52" stroke-width="10" fill="none" opacity=".72"><path d="M130 280Q250 130 370 280T610 280T850 280T1070 280"/><path d="M150 280V400M1050 280V400"/></g>
+<g fill="#e9b94f"><circle cx="160" cy="300" r="25"/><circle cx="1040" cy="300" r="25"/><circle cx="230" cy="250" r="15"/><circle cx="970" cy="250" r="15"/></g>
+</svg>

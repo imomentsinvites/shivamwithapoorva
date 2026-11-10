@@ -1,0 +1,1 @@
+Add your licensed wedding background track here and name it wedding-bg-music.mp3. The player starts on the visitor's first tap and the floating Music On/Off control pauses and resumes it.

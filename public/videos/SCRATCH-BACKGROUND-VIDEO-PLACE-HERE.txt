@@ -1,0 +1,2 @@
+Add your scratch section background video here as scratch-background.mp4.
+It plays behind the interactive scratch card. Keep it vertical (9:16), muted, and optimized for web.

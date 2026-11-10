@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Shivam and Apoorva//Wedding//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:shivam-apoorva-reception-20261124@wedding
+DTSTAMP:20261101T000000Z
+DTSTART:20261124T133000Z
+DTEND:20261124T163000Z
+SUMMARY:Shivam & Apoorva - Wedding (Reception)
+LOCATION:Kawatra Tents\, behind Keshav Mahavidyalaya\, Parwana Road\, Pitampura\, New Delhi
+DESCRIPTION:Shivam & Apoorva's wedding celebration.
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Shivam & Apoorva's wedding is tomorrow
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" fill="none">
+<defs>
+ <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#f8d9d7"/><stop offset=".65" stop-color="#fbe9dc"/><stop offset="1" stop-color="#f4d4c7"/></linearGradient>
+ <linearGradient id="gold" x2="0" y2="1"><stop stop-color="#f8dda0"/><stop offset="1" stop-color="#b77a3f"/></linearGradient>
+ <linearGradient id="hill" x2="0" y2="1"><stop stop-color="#d8a99b"/><stop offset="1" stop-color="#b67f77"/></linearGradient>
+</defs>
+<rect width="1200" height="900" fill="url(#sky)"/>
+<circle cx="920" cy="180" r="105" fill="#fff2d9" opacity=".48"/>
+<path d="M0 620 Q180 500 360 600 T720 580 T1200 560 V900 H0Z" fill="#d9aaa0" opacity=".42"/>
+<path d="M0 700 Q220 580 430 690 T850 650 T1200 670 V900 H0Z" fill="url(#hill)" opacity=".3"/>
+<g fill="#f9eee3" stroke="#bd8c61" stroke-width="5" opacity=".78">
+ <path d="M80 670V440Q80 280 250 280Q420 280 420 440V670Z"/>
+ <path d="M115 670V450Q115 330 250 330Q385 330 385 450V670Z" fill="#eac4b5" opacity=".42"/>
+ <path d="M800 670V420Q800 240 980 240Q1160 240 1160 420V670Z"/>
+ <path d="M835 670V430Q835 290 980 290Q1125 290 1125 430V670Z" fill="#eac4b5" opacity=".42"/>
+</g>
+<g fill="#c68e6b" opacity=".8"><path d="M0 770H1200V900H0Z"/><path d="M0 780Q300 740 600 780T1200 780" stroke="#f9e7d7" stroke-width="8" fill="none"/></g>
+<g stroke="#9e6b4d" stroke-width="7" fill="none" opacity=".7">
+ <path d="M0 110Q180 180 330 65T650 80T930 70T1200 120"/>
+ <path d="M85 0V145M1110 0V150"/>
+</g>
+<g fill="#c96f82" opacity=".8">
+ <circle cx="70" cy="125" r="17"/><circle cx="105" cy="148" r="12"/><circle cx="1130" cy="130" r="17"/><circle cx="1080" cy="105" r="12"/>
+ <circle cx="280" cy="80" r="13"/><circle cx="920" cy="65" r="13"/>
+</g>
+
+<g transform="translate(600 430)">
+ <path d="M-350 320V-5Q-350 -260 0 -260Q350 -260 350 -5V320" stroke="#a76f4c" stroke-width="24" fill="#f8e5d5"/>
+ <path d="M-300 320V0Q-300 -205 0 -205Q300 -205 300 0V320" stroke="#d7a36d" stroke-width="12" fill="#e9c2b1"/>
+ <path d="M-220 320V30Q-220 -125 0 -125Q220 -125 220 30V320" stroke="#b77a50" stroke-width="10" fill="#f9e8d9"/>
+ <path d="M-160 320V70Q-160 -65 0 -65Q160 -65 160 70V320" fill="#f3d8c8" opacity=".45"/>
+ <path d="M-420 320H420" stroke="#b77a50" stroke-width="15"/>
+ <g fill="#c96f82"><circle cx="-330" cy="-5" r="26"/><circle cx="-290" cy="-65" r="22"/><circle cx="-235" cy="-105" r="22"/><circle cx="330" cy="-5" r="26"/><circle cx="290" cy="-65" r="22"/><circle cx="235" cy="-105" r="22"/></g>
+ <g fill="#e6b15e"><circle cx="-250" cy="-155" r="18"/><circle cx="-180" cy="-200" r="18"/><circle cx="250" cy="-155" r="18"/><circle cx="180" cy="-200" r="18"/></g>
+ <path d="M-80 320V210Q0 115 80 210V320" fill="#c68a6a" opacity=".45"/>
+</g>
+</svg>

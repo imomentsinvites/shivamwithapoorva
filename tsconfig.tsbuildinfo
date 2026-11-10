@@ -1,0 +1,1 @@
+{"root":["./src/App.tsx","./src/main.tsx","./src/vite-env.d.ts","./src/components/EventSection.tsx","./src/components/ScratchCard.tsx","./src/components/ScrollCue.tsx","./src/data/events.ts"],"errors":true,"version":"5.8.3"}
