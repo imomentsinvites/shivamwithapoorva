@@ -4,13 +4,17 @@ export type ScheduleItem = {
   meal?: boolean;
 };
 
+export type EventPart = {
+  schedule: ScheduleItem[];
+  location: string;
+  mapUrl: string;
+};
+
 export type WeddingEvent = {
   id: "mehendi" | "haldi" | "sangeet" | "bhaat" | "baraat";
   dateLabel: string;
   title: string;
-  schedule: ScheduleItem[];
-  location: string;
-  mapUrl: string;
+  parts: EventPart[];
   eyebrow: string;
   particle: "leaf" | "marigold" | "rose";
 };
@@ -26,27 +30,35 @@ export const events: WeddingEvent[] = [
     id: "mehendi",
     dateLabel: "22 November 2026",
     title: "Path & Mehendi",
-    schedule: [
-      { label: "Sunderkand Path", time: "11:00 AM" },
-      { label: "Lunch", time: "1:00 PM", meal: true },
-      { label: "Mehendi", time: "4:00 PM" },
-      { label: "Dinner", time: "8:00 PM", meal: true },
+    parts: [
+      {
+        schedule: [
+          { label: "Sunderkand Path", time: "11:00 AM" },
+          { label: "Lunch", time: "1:00 PM", meal: true },
+          { label: "Mehendi", time: "4:00 PM" },
+          { label: "Dinner", time: "8:00 PM", meal: true },
+        ],
+        location: "Satsang Bhawan, Pundrik Vihar, Pitampura, N. Delhi - 34",
+        mapUrl: mapSearch(SATSANG_BHAWAN),
+      },
     ],
-    location: "Satsang Bhawan, Pundrik Vihar, Pitampura, N. Delhi - 34",
-    mapUrl: mapSearch(SATSANG_BHAWAN),
-    eyebrow: "Devotion, colour & a lot of love",
+    eyebrow: "Devotion, colour & love",
     particle: "rose",
   },
   {
     id: "haldi",
     dateLabel: "23 November 2026",
     title: "Haldi",
-    schedule: [
-      { label: "Haldi", time: "12:00 PM" },
-      { label: "Lunch", time: "1:00 PM", meal: true },
+    parts: [
+      {
+        schedule: [
+          { label: "Haldi", time: "12:00 PM" },
+          { label: "Lunch", time: "1:00 PM", meal: true },
+        ],
+        location: "3rd Floor, Hotel City Park, Pitampura",
+        mapUrl: mapSearch(CITY_PARK),
+      },
     ],
-    location: "3rd Floor, Hotel City Park, Pitampura",
-    mapUrl: mapSearch(CITY_PARK),
     eyebrow: "Sunshine, smiles & blessings",
     particle: "marigold",
   },
@@ -54,36 +66,52 @@ export const events: WeddingEvent[] = [
     id: "sangeet",
     dateLabel: "23 November 2026",
     title: "Tilak & Sangeet",
-    schedule: [
-      { label: "Tilak", time: "7:00 PM" },
-      { label: "Sangeet", time: "8:00 PM" },
+    parts: [
+      {
+        schedule: [
+          { label: "Tilak", time: "7:00 PM" },
+          { label: "Sangeet", time: "8:00 PM" },
+        ],
+        location: "Rajmahal Hall, Hotel City Park, Pitampura",
+        mapUrl: mapSearch(`Rajmahal Hall, ${CITY_PARK}`),
+      },
     ],
-    location: "Rajmahal Hall, Hotel City Park, Pitampura",
-    mapUrl: mapSearch(`Rajmahal Hall, ${CITY_PARK}`),
     eyebrow: "An evening of music & celebration",
     particle: "rose",
   },
   {
     id: "bhaat",
     dateLabel: "24 November 2026",
-    title: "Bhaat & Gurchadi",
-    schedule: [
-      { label: "Bhaat", time: "11:00 AM" },
-      { label: "Lunch", time: "1:00 PM", meal: true },
-      { label: "Gurchadi", time: "6:00 PM" },
+    title: "Bhaat",
+    parts: [
+      {
+        schedule: [
+          { label: "Bhaat", time: "11:00 AM" },
+          { label: "Lunch", time: "1:00 PM", meal: true },
+        ],
+        location: "3rd Floor, Hotel City Park, Pitampura",
+        mapUrl: mapSearch(CITY_PARK),
+      },
     ],
-    location: "3rd Floor, Hotel City Park, Pitampura",
-    mapUrl: mapSearch(CITY_PARK),
     eyebrow: "Family, blessings & traditions",
     particle: "rose",
   },
   {
     id: "baraat",
     dateLabel: "24 November 2026",
-    title: "Reception",
-    schedule: [{ label: "Reception", time: "7:00 PM" }],
-    location: "Kawatra Tents, behind Keshav Mahavidyalaya, Parwana Road, Pitampura, New Delhi",
-    mapUrl: mapSearch("Kawatra Tents, Parwana Road, Pitampura, New Delhi"),
+    title: "Wedding",
+    parts: [
+      {
+        schedule: [{ label: "Gurchadi", time: "6:00 PM" }],
+        location: "3rd Floor, Hotel City Park, Pitampura",
+        mapUrl: mapSearch(CITY_PARK),
+      },
+      {
+        schedule: [{ label: "Assembling of Baraat", time: "7:00 PM" }],
+        location: "Kawatra Tents, behind Keshav Mahavidyalaya, Parwana Road, Pitampura, New Delhi",
+        mapUrl: mapSearch("Kawatra Tents, Parwana Road, Pitampura, New Delhi"),
+      },
+    ],
     eyebrow: "The grand celebration",
     particle: "rose",
   },
