@@ -47,22 +47,27 @@ export default function EventSection({ event }: { event: WeddingEvent }) {
           <span className="event-date">{event.dateLabel}</span>
           <h2 id={`${event.id}-title`}>{event.title}</h2>
           <div className="event-divider"><i>✦</i></div>
-          <div className="event-details">
-            {event.schedule.map((item) => (
-              <p key={item.label} className={item.meal ? "event-meal" : undefined}>
-                {item.label} · {item.time}
-              </p>
-            ))}
-          </div>
-          <div className="event-location">
-            <MapPin size={17} strokeWidth={1.7} />
-            <span>{event.location}</span>
-          </div>
-          <a className="event-map-link" href={event.mapUrl} target="_blank" rel="noreferrer">
-            <MapPin size={15} />
-            VIEW LOCATION
-            <ExternalLink size={13} />
-          </a>
+          {event.parts.map((part, index) => (
+            <div className="event-part" key={part.location + index}>
+              {index > 0 && <div className="event-divider"><i>✦</i></div>}
+              <div className="event-details">
+                {part.schedule.map((item) => (
+                  <p key={item.label} className={item.meal ? "event-meal" : undefined}>
+                    {item.label} · {item.time}
+                  </p>
+                ))}
+              </div>
+              <div className="event-location">
+                <MapPin size={17} strokeWidth={1.7} />
+                <span>{part.location}</span>
+              </div>
+              <a className="event-map-link" href={part.mapUrl} target="_blank" rel="noreferrer">
+                <MapPin size={15} />
+                VIEW LOCATION
+                <ExternalLink size={13} />
+              </a>
+            </div>
+          ))}
         </div>
       </div>
       <span className="event-side-note" aria-hidden="true">A DAY TO REMEMBER</span>

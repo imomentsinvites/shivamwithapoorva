@@ -3,7 +3,7 @@ import { useEffect, useRef, useState, type PointerEvent } from "react";
 // 24 Nov 2026, 7:00 PM IST = 13:30 UTC; 3 hour block.
 const GOOGLE_CALENDAR_URL = "https://calendar.google.com/calendar/render?" + new URLSearchParams({
   action: "TEMPLATE",
-  text: "Shivam & Apoorva - Wedding (Reception)",
+  text: "Shivam & Apoorva - Wedding (Baraat)",
   dates: "20261124T133000Z/20261124T163000Z",
   location: "Kawatra Tents, behind Keshav Mahavidyalaya, Parwana Road, Pitampura, New Delhi",
   details: "Shivam & Apoorva's wedding celebration.",
