@@ -108,7 +108,7 @@ export const events: WeddingEvent[] = [
       },
       {
         schedule: [{ label: "Assembling of Baraat", time: "7:00 PM" }],
-        location: "Kawatra Tents, behind Keshav Mahavidyalaya, Parwana Road, Pitampura, New Delhi",
+        location: "The Sherion by Kawatra Tents, behind Keshav Mahavidyalaya, Pitampura, New Delhi",
         mapUrl: mapSearch("Kawatra Tents, Parwana Road, Pitampura, New Delhi"),
       },
     ],
