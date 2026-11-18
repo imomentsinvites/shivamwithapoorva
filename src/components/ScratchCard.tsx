@@ -5,7 +5,7 @@ const GOOGLE_CALENDAR_URL = "https://calendar.google.com/calendar/render?" + new
   action: "TEMPLATE",
   text: "Shivam & Apoorva - Wedding (Baraat)",
   dates: "20261124T133000Z/20261124T163000Z",
-  location: "The Sherion by Kawatra Tent, behind Keshav Mahavidyalaya, Pitampura, New Delhi",
+  location: "The Sherion by Kawatra Tents, behind Keshav Mahavidyalaya, Pitampura, New Delhi",
   details: "Shivam & Apoorva's wedding celebration.",
 }).toString();
 
